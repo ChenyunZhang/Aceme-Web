@@ -1,0 +1,222 @@
+body{
+    /*font-family:Arial, Helvetica, sans-serif;*/
+    /*font-size:15px;*/
+    /*line-height: 1.5;*/
+    /*the line below represent three lines above;*/
+    /*syntax font: font-size/line-height, font-family;*/
+    font: 15px/1.5 Arial,Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+    background-color: #f4f4f4;
+}
+
+/*global*/
+.container{
+    /*set it to percentage because we want it to be responsive.*/
+    width:80%;
+    /*move everything to the middle;*/
+    margin:auto;
+    /*if something goes outside of the div, we want that to be hidden*/
+    overflow:hidden;
+    
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+.btn1{
+    height:38px;
+    background:#e8492d;
+    border:none;
+    padding-left:20px;
+    padding-right:20px;
+    color:#ffffff;
+}
+
+.dark{
+    padding:15px;
+    background:#354248;
+    color:#ffffff;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+/*header*/
+header{
+    background-color:#35424a;
+    color:ffffff;
+    padding-top:30px;
+    min-height:70px;
+    /*3px is the width*/
+    border-bottom: #e8491d 3px solid;
+}
+
+header a{
+    color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:16px;
+}
+
+
+header li{
+    display:inline;
+    float:left;
+    padding:0 20px 0 20px;
+}
+
+header #branding{
+    float:left;
+}
+
+header #branding h1{
+    float:0;
+}
+
+header nav{
+    float:right;
+    /*move the nav down*/
+    margin-top:10px;
+}
+
+header .highlight, header .current a{
+    color:#e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+    font-weight: :bold;
+    color:#cccccc;
+}
+
+/*showcase*/
+#showcase{
+    min-height:400px;
+    /*0 is the x-axis, move the img up 400px*/
+    background:url("https://progameguides.com/wp-content/uploads/2020/01/new-horizons-desktop-wallpaper001.jpg") no-repeat 0 -400px;
+    opacity:80%;
+    text-align: center;
+    color:#FFFFFF;
+}
+
+#showcase h1{
+    margin-top:100px;
+    font-size:55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size:20px;
+}
+
+/*newsletter*/
+#newsletter{
+    padding:15px;
+    color:white;
+    background: #35424a;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+    width:250px;
+    height:25px;
+    padding:4px;
+}
+
+#boxes{
+    margin-top:10px;
+}
+
+#boxes .box{
+    width:30%;
+    float:left;
+    padding:10px;
+    text-align:center;
+}
+
+#boxes .box img{
+    width:90px;
+    height:120px;
+}
+
+/*sidebar*/
+
+aside#sidebar{
+    float:right;
+    width:30%;
+    margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width:90%;
+    padding:5px;
+}
+/*main-col*/
+article#main-col{
+    float:left;
+    width:65%;
+}
+
+/*services*/
+ul#services li{
+    padding:20px;
+    border:#cccccc solid 1px;
+    list-style:none;
+    margin-bottom: 5px;
+    background:#e6e6e6;
+}
+
+footer{
+    text-align:center;
+    background-color:#e8491d;
+    color:#ffffff;
+    margin-top:30px;
+    padding:20px;
+}
+
+/*media query*/
+/*@media(max-width:768px){
+    body{
+        display:none;
+    }
+}*/
+
+@media(max-width: 768px;){
+    header #branding, header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float:none;
+        width:100%;
+        text-align: center;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase h1{
+        margin=top:40px;
+    }
+    
+    #newsletter button .quote button{
+        display:block;
+        width:100%;
+    }
+    #newsletter form input[type="email"],
+    .quote input.
+    .quot textarea{
+            width:100%;
+            margin-bottom: 5px;
+        }
+}
